@@ -1,0 +1,79 @@
+
+.title{
+  padding-left: 40px;
+  margin-top: 37px;
+}
+
+
+.students{
+  max-width: 1200px;       
+  display: flex;                
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.student{
+  width: 219px;
+  height: 290px;
+  padding: 10px 10px;
+  position: relative;
+}
+
+
+.cube {
+  width: 190px;
+  height: 250px;
+  margin: 38%;
+  background-color: pink;
+  animation: rotateCube 1s infinite;
+  position: absolute;
+  margin: 10px 6px;
+}
+
+@keyframes rotateCube {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  30% {
+      background-color: purple;
+  }
+
+  100% {
+      transform: rotate(180deg);
+  }
+}
+
+/* ----------ПсевдоКлассы------------- */
+.student:nth-child(2n + 1) {
+  background-color: red;
+}
+
+.student:hover{
+  background-color: aqua;
+}
+
+.now{
+  position: fixed;
+  margin-right: 360px;
+  top: 163px;
+  width: 88.72px;
+  height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 8px;
+  background-color: rgb(62, 212, 112);
+}
+
+.student-name{
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+} 
+
